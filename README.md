@@ -39,6 +39,6 @@ Configurable options:
 numOfSteps    - Number of steps to show in the bar.<br />
 numsColor     - Color of numbers in the bar.<br />
 componentBack - Color of div container for ionic component (TRANSPARENT by DEFAULT).<br />
-barHeigth     - Bar heigth (IF PROVIDED MUST BE IN PTs - 12pt,50pt,100pt etc.).<br />
+barHeigth     - Bar heigth (IF PROVIDED MUST BE IN PTs - 20pt,50pt,100pt etc. and 20pt is MINIMUM ).<br />
 highColor     - Filling color(Color that fills steps when increased / decreased.).<br />
 backColor     - Background color of steps bar.<br />

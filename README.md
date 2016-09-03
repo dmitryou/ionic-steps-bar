@@ -23,16 +23,16 @@ Steps to start:
 
 Default options:
 ---------------------------------
-```options = {<br />
-    numOfSteps: 2,<br />
-    numsColor: 'white',<br />
-    componentBack: 'transparent',<br />
-    cellSize: '20pt',<br />
-    componentMargin: '1% 0',<br />
-    highColor: '#8AA39B',<br />
-    highPadding: '0 0.5%', //not configurable<br />
-    backColor: '#95D9C3'<br />
-    }```
+```options = {```<br />
+    ```numOfSteps: 2,```<br />
+    ```numsColor: 'white',```<br />
+    ```componentBack: 'transparent',```<br />
+    ```cellSize: '20pt',```<br />
+    ```componentMargin: '1% 0',```<br />
+    ```highColor: '#8AA39B',```<br />
+    ```highPadding: '0 0.5%', //not configurable```<br />
+    ```backColor: '#95D9C3'```<br />
+    ```}```<br />
 
 Configurable options:
 ---------------------------------

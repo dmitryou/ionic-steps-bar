@@ -23,6 +23,16 @@ Steps to start:
 
 Default options:
 ---------------------------------
+options = {
+    numOfSteps: 2,
+    numsColor: 'white',
+    componentBack: 'transparent',
+    cellSize: '20pt',
+    componentMargin: '1% 0',
+    highColor: '#8AA39B',
+    highPadding: '0 0.5%', //not configurable
+    backColor: '#95D9C3'
+    }
 
 Configurable options:
 ---------------------------------

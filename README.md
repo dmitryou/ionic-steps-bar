@@ -17,7 +17,7 @@ Steps to start:
 
 ```<ion-view view-title="Ionic Steps Bar">```<br />
     ```<ion-content scroll="false">```<br />
-        ```<div ion-steps-bar class="ion-steps-bar" set-step="1" options="{numOfSteps: 4,cellSize: '20pt'}"></div>```<br />
+        ```<div ion-steps-bar class="ion-steps-bar" set-step="1" options="{numOfSteps: 4,barHeigth: '20pt'}"></div>```<br />
     ```</ion-content>```<br />
 ```</ion-view>```<br />
 
@@ -27,8 +27,8 @@ Default options:
     ```numOfSteps: 2,```<br />
     ```numsColor: 'white',```<br />
     ```componentBack: 'transparent',```<br />
-    ```cellSize: '20pt',```<br />
-    ```componentMargin: '1% 0',```<br />
+    ```barHeigth: '20pt',```<br />
+    ```componentMargin: '1% 0', //not configurable```<br />
     ```highColor: '#8AA39B',```<br />
     ```highPadding: '0 0.5%', //not configurable```<br />
     ```backColor: '#95D9C3'```<br />
@@ -36,9 +36,9 @@ Default options:
 
 Configurable options:
 ---------------------------------
-numOfSteps - Number of steps to show in the bar.<br />
-numsColor - Color of numbers in the bar.<br />
-componentBack - Color of bar component background.<br />
-cellSize - Size of each bar.<br />
-numOfSteps - Number of steps to show in the bar.<br />
-numOfSteps - Number of steps to show in the bar.<br />
+numOfSteps    - Number of steps to show in the bar.<br />
+numsColor     - Color of numbers in the bar.<br />
+componentBack - Color of div container for ionic component (TRANSPARENT by DEFAULT).<br />
+barHeigth     - Bar heigth (IF PROVIDED MUST BE IN PTs - 12pt,50pt,100pt etc.).<br />
+highColor     - Filling color(Color that fills steps when increased / decreased.).<br />
+backColor     - Background color of steps bar.<br />

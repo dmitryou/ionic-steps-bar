@@ -27,7 +27,7 @@ angular.module('ionic-steps-bar', [])
     numOfSteps: 2,
     numsColor: 'white',
     componentBack: 'transparent',
-    cellSize: '20pt',
+    barHeigth: '20pt',
     componentMargin: '1% 0',
     highColor: '#8AA39B',
     highPadding: '0 0.5%', //not configurable
@@ -53,7 +53,7 @@ function ionStepsBarDirective() {
         '<style>',
         'li.step-indicator-container:last-child {margin-left: 0 !important;}',
         '</style>',
-        '<li class="step-indicator-container" ng-repeat="item in stepsNumbers track by $index" ng-bind="$index + 1" style="display: inline-block;position: relative;height: 100%;width: calc({{cellSize}} - 0.5%);margin-left: {{cellSize}};line-height: {{cellSize}};font-size:{{fontSize}}">',
+        '<li class="step-indicator-container" ng-repeat="item in stepsNumbers track by $index" ng-bind="$index + 1" style="display: inline-block;position: relative;height: 100%;width: calc({{barHeigth}} - 0.5%);margin-left: {{barHeigth}};line-height: {{barHeigth}};font-size:{{fontSize}}">',
         '</li>',
         '</ul>'
       ];
@@ -64,7 +64,7 @@ function ionStepsBarDirective() {
 
       $scope.defaultConfigs = defaultConfigs;
       $scope.step = parseInt($scope.options.numOfSteps && $scope.options.numOfSteps < 5? $scope.options.numOfSteps : $scope.defaultConfigs.numOfSteps);
-      $scope.cellSize = $scope.options.cellSize ? $scope.options.cellSize : $scope.defaultConfigs.cellSize;
+      $scope.barHeigth = $scope.options.barHeigth ? $scope.options.barHeigth : $scope.defaultConfigs.barHeigth;
       $scope.fontSize = calculateFontSize();
       $scope.stepsNumbers= new Array($scope.step);
       $scope.higthlight = {width: "100%"};
@@ -92,8 +92,8 @@ function ionStepsBarDirective() {
       }
 
       function calculateFontSize() {
-        var cellSize = parseInt($scope.options.cellSize ? $scope.options.cellSize.split("pt")[0] : $scope.defaultConfigs.cellSize.split("pt")[0]);
-        return cellSize / 2 + "pt";
+        var barHeigth = parseInt($scope.options.barHeigth ? $scope.options.barHeigth.split("pt")[0] : $scope.defaultConfigs.barHeigth.split("pt")[0]);
+        return barHeigth / 2 + "pt";
       }
 
     }],
@@ -104,7 +104,7 @@ function ionStepsBarDirective() {
       function setComponentInitialStyles() {
         element.css('background-color', scope.options.componentBack ? scope.options.componentColor : scope.defaultConfigs.componentBack);
         element.css('color', scope.options.numsColor ? scope.options.numsColor : scope.defaultConfigs.numsColor);
-        element.css('height', scope.options.cellSize ? scope.options.cellSize : scope.defaultConfigs.cellSize);
+        element.css('height', scope.options.barHeigth ? scope.options.barHeigth : scope.defaultConfigs.barHeigth);
         element.css('margin', scope.options.componentMargin ? scope.options.componentMargin : scope.defaultConfigs.componentMargin);
         element.find('ul').eq(0).css('background-color', scope.options.backColor ? scope.options.backColor : scope.defaultConfigs.backColor);
         element.find('ul').eq(0).css('direction', 'rtl');
@@ -113,23 +113,23 @@ function ionStepsBarDirective() {
         element.find('ul').eq(0).css('height', '100%');
         element.find('ul').eq(0).css('position', 'relative');
         element.find('ul').eq(0).css('margin', 'auto');
-        element.find('ul').eq(0).css('border-radius', scope.options.cellSize ? scope.options.cellSize : scope.defaultConfigs.cellSize);
+        element.find('ul').eq(0).css('border-radius', scope.options.barHeigth ? scope.options.barHeigth : scope.defaultConfigs.barHeigth);
         element.find('li').eq(0).css('height', '80%');
         element.find('li').eq(0).css('position', 'absolute');
         element.find('li').eq(0).css('top', '10%');//should be equal to right pos
         element.find('li').eq(0).css('right', '1%');//should be equal to top pos
-        element.find('li').eq(0).css('width', scope.options.cellSize ? scope.options.cellSize : scope.defaultConfigs.cellSize);
+        element.find('li').eq(0).css('width', scope.options.barHeigth ? scope.options.barHeigth : scope.defaultConfigs.barHeigth);
         element.find('li').eq(0).find('div').eq(0).css('background-color', scope.options.highColor ? scope.options.highColor : scope.defaultConfigs.highColor);
         element.find('li').eq(0).find('div').eq(0).css('padding', scope.defaultConfigs.highPadding);
         element.find('li').eq(0).find('div').eq(0).css('height', '100%');
         element.find('li').eq(0).find('div').eq(0).css('transition', 'width 0.5s');
-        element.find('li').eq(0).find('div').eq(0).css('border-radius', scope.options.cellSize ? scope.options.cellSize : scope.defaultConfigs.cellSize);
+        element.find('li').eq(0).find('div').eq(0).css('border-radius', scope.options.barHeigth ? scope.options.barHeigth : scope.defaultConfigs.barHeigth);
       }
 
       function calculateBarWidth() {
         var numOfSteps = parseInt(scope.options.numOfSteps && scope.options.numOfSteps < 5? scope.options.numOfSteps : scope.defaultConfigs.numOfSteps);
-        var cellSize = parseInt(scope.options.cellSize ? scope.options.cellSize.split("pt")[0] : scope.defaultConfigs.cellSize.split("pt")[0]);
-        var barSize = cellSize * (numOfSteps + numOfSteps - 1);
+        var barHeigth = parseInt(scope.options.barHeigth ? scope.options.barHeigth.split("pt")[0] : scope.defaultConfigs.barHeigth.split("pt")[0]);
+        var barSize = barHeigth * (numOfSteps + numOfSteps - 1);
         return barSize + "pt";
       }
     }

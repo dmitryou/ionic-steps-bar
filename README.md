@@ -36,3 +36,9 @@ Default options:
 
 Configurable options:
 ---------------------------------
+numOfSteps - Number of steps to show in the bar.<br />
+numsColor - Color of numbers in the bar.<br />
+componentBack - Color of bar component background.<br />
+cellSize - Size of each bar.<br />
+numOfSteps - Number of steps to show in the bar.<br />
+numOfSteps - Number of steps to show in the bar.<br />

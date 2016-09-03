@@ -7,11 +7,13 @@ A steps bar component for Ionic.
 Steps to start:
 ---------------------------------
 
-#1.Include ion-pullup.js in your HTML : <script src="js/ionic-steps-bar.js"></script>
+1.Include ion-pullup.js in your HTML : 
+    <script src="js/ionic-steps-bar.js"></script>
 
-#2.Add dependencies to your app : angular.module('yourApp', ['ionic', 'ionic-steps-bar'])
+2.Add dependencies to your app : 
+    angular.module('yourApp', ['ionic', 'ionic-steps-bar'])
 
-#3.Usage: 
+3.Usage: 
 
 <ion-view view-title="Ionic Steps Bar">
     <ion-content scroll="false">

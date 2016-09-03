@@ -17,7 +17,7 @@ Steps to start:
 
 ```<ion-view view-title="Ionic Steps Bar">```<br />
     ```<ion-content scroll="false">```<br />
-        ```<div ion-steps-bar class="ion-steps-bar" set-step="1" options="{numOfSteps: 4,barHeigth: '20pt'}"></div>```<br />
+        ```<div ion-steps-bar set-step="1" options="{numOfSteps: 4,barHeigth: '20pt'}"></div>```<br />
     ```</ion-content>```<br />
 ```</ion-view>```<br />
 

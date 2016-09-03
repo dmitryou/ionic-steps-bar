@@ -15,8 +15,14 @@ Steps to start:
 
 3.Usage: <br />
 
-```<ion-view view-title="Ionic Steps Bar">```
-    ```<ion-content scroll="false">```
-        ```<div ion-steps-bar class="ion-steps-bar" set-step="1" options="{numOfSteps: 4,cellSize: '20pt'}"></div>```
-    ```</ion-content>```
-```</ion-view>```
+```<ion-view view-title="Ionic Steps Bar">```<br />
+    ```<ion-content scroll="false">```<br />
+        ```<div ion-steps-bar class="ion-steps-bar" set-step="1" options="{numOfSteps: 4,cellSize: '20pt'}"></div>```<br />
+    ```</ion-content>```<br />
+```</ion-view>```<br />
+
+Default options:
+---------------------------------
+
+Configurable options:
+---------------------------------

@@ -1,0 +1,22 @@
+{
+  "name": "ionic-steps-bar",
+  "version": "1.0.0",
+  "main": "ionic-steps-bar.js",
+  "homepage": "https://github.com/dmitryou/ionic-steps-bar",
+  "authors": [
+    "dmitryourkevich@gmail.com"
+  ],
+  "description": "Steps bar component for Ionic Framework.",
+  "keywords": [
+    "steps",
+    "bar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

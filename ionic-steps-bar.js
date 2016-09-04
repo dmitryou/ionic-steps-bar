@@ -28,8 +28,8 @@ angular.module('ionic-steps-bar', [])
     numsColor: 'white',
     componentBack: 'transparent',
     barHeigth: '20pt',
-    componentMargin: '1% 0',
-    highColor: '#8AA39B',
+    componentMargin: '0 auto',
+    highColor: '#19398a',
     highPadding: '0 0.5%', //not configurable
     backColor: '#95D9C3'
   })
@@ -68,14 +68,14 @@ function ionStepsBarDirective() {
       $scope.fontSize = calculateFontSize();
       $scope.stepsNumbers= new Array($scope.step);
       $scope.higthlight = {width: "100%"};
-      $scope.currentStep = $scope.setStep;
+      $scope.setStep = $scope.setStep || 1;
 
-      $scope.$watch('currentStep', function(newVal, oldVal){
+      $scope.$watch('setStep', function(newVal, oldVal){
         if(newVal > $scope.step ) {
           return;
         }
         if(newVal > 4) {
-          $scope.currentStep = 4;
+          $scope.setStep = 4;
         }
         if(newVal !== oldVal){
           calculateHighlightWidth(newVal);
@@ -114,9 +114,9 @@ function ionStepsBarDirective() {
         element.find('ul').eq(0).css('position', 'relative');
         element.find('ul').eq(0).css('margin', 'auto');
         element.find('ul').eq(0).css('border-radius', scope.options.barHeigth ? scope.options.barHeigth : scope.defaultConfigs.barHeigth);
-        element.find('li').eq(0).css('height', '80%');
+        element.find('li').eq(0).css('height', '90%');
         element.find('li').eq(0).css('position', 'absolute');
-        element.find('li').eq(0).css('top', '10%');//should be equal to right pos
+        element.find('li').eq(0).css('top', '5%');//should be equal to right pos
         element.find('li').eq(0).css('right', '1%');//should be equal to top pos
         element.find('li').eq(0).css('width', scope.options.barHeigth ? scope.options.barHeigth : scope.defaultConfigs.barHeigth);
         element.find('li').eq(0).find('div').eq(0).css('background-color', scope.options.highColor ? scope.options.highColor : scope.defaultConfigs.highColor);

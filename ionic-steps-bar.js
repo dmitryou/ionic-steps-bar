@@ -29,7 +29,7 @@ angular.module('ionic-steps-bar', [])
     componentBack: 'transparent',
     barHeigth: '20pt',
     componentMargin: '0 auto',
-    highColor: '#19398a',
+    highColor: '#8AA39B',
     backColor: '#95D9C3',
     radius: true,
     dir: 'rtl',

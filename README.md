@@ -6,8 +6,9 @@ A steps bar component for Ionic.
 
 Steps to start:
 ---------------------------------
-0.Install via bower: <br />
-```bower install```
+0.Install via bower or npm: <br />
+```bower install ionic-steps-bar```
+```npm install ionic-steps-bar```
 
 1.Include ion-pullup.js in your HTML : <br />
     ```<script src="js/ionic-steps-bar.js"></script>```
